@@ -1,0 +1,317 @@
+/* ==================================
+   SHELLDOC WEB - ESTILOS
+   ================================== */
+
+:root {
+    --r-background-color: #0b1120;
+    --r-main-color: #e2e8f0;
+    --r-heading-color: #f8fafc;
+    --r-link-color: #38bdf8;
+    --r-main-font: Arial, sans-serif;
+    --r-code-font: "Consolas", monospace;
+}
+
+/* Fondo general */
+
+.reveal .slide-background {
+    background: radial-gradient(
+        ellipse at top right,
+        #172554,
+        #0b1120 65%
+    );
+}
+
+/* Portada */
+
+#title-slide .title {
+    color: #38bdf8;
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+#title-slide .subtitle {
+    color: #4ade80;
+    font-family: monospace;
+}
+
+#title-slide .author {
+    color: #94a3b8;
+    font-size: 0.8em;
+}
+
+/* Títulos */
+
+.reveal h2 {
+    color: #38bdf8;
+    font-size: 1.5em;
+    border-left: 6px solid #4ade80;
+    padding-left: 18px;
+    margin-bottom: 30px;
+}
+
+/* Ventanas de terminal */
+
+.reveal pre {
+    position: relative;
+    width: 100%;
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding-top: 42px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #0005;
+}
+
+/* Barra superior */
+
+.reveal pre::before {
+    content: "● ● ●    TERMINAL";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1e293b;
+    color: #4ade80;
+    padding: 10px 16px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+/* Código */
+
+.reveal pre code {
+    background: transparent;
+    color: #e2e8f0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 20px;
+    max-height: 380px;
+    overflow: auto;
+}
+
+/* Texto destacado */
+
+.reveal strong {
+    color: #4ade80;
+}
+
+/* Barra de progreso */
+
+.reveal .progress {
+    height: 5px;
+    color: #4ade80;
+}
+
+/* Controles de navegación */
+
+.reveal .controls {
+    color: #38bdf8;
+}
+
+/* Número de diapositiva */
+
+.reveal .slide-number {
+    background: #1e293b;
+    color: #38bdf8;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+/* Pie de página */
+
+.reveal .footer {
+    color: #94a3b8;
+    font-size: 14px;
+}
+/* ==================================
+   DISEÑO DE COMANDOS Y RESULTADOS
+   ================================== */
+
+.reveal .columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.reveal .column {
+    min-width: 0;
+}
+
+.reveal h3 {
+    color: #94a3b8;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* Ventanas de terminal mejoradas */
+
+.reveal pre {
+    box-sizing: border-box;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.reveal pre::before {
+    content: "● ● ●";
+    color: #4ade80;
+    background: #1e293b;
+    padding: 12px 18px;
+}
+
+/* Evitar desplazamiento innecesario */
+
+.reveal div.sourceCode {
+    overflow: visible;
+    border: none;
+}
+
+.reveal pre code {
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 1em;
+    line-height: 1.6;
+    max-height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Colores del comando */
+
+.reveal code.terminal-comando,
+.reveal pre.terminal-comando code,
+.reveal .terminal-comando code span {
+    color: #4ade80;
+}
+
+/* Colores del resultado */
+
+.reveal code.terminal-resultado,
+.reveal pre.terminal-resultado code {
+    color: #e2e8f0;
+}
+
+/* Descripciones inferiores */
+
+.reveal .column p {
+    font-size: 0.6em;
+    color: #94a3b8;
+}
+
+/* Personalizar barras de desplazamiento */
+
+.reveal pre code::-webkit-scrollbar {
+    width: 6px;
+}
+
+.reveal pre code::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 8px;
+}
+
+.reveal pre code::-webkit-scrollbar-track {
+    background: #020617;
+}
+/* ==================================
+   AJUSTES FINALES - SHELLDOC WEB
+   ================================== */
+
+/* Distribución de columnas */
+
+.reveal .columns > .column:first-child {
+    width: 35% !important;
+}
+
+.reveal .columns > .column:last-child {
+    width: 65% !important;
+}
+
+/* Ventanas de terminal */
+
+.reveal pre {
+    min-height: 280px;
+    box-shadow: 0 12px 30px #0004;
+}
+
+/* Botones de colores */
+
+.reveal pre::before {
+    content: "";
+    height: 42px;
+    padding: 0;
+    background:
+        radial-gradient(circle at 20px 21px,
+            #ff5f57 5px, transparent 6px),
+        radial-gradient(circle at 39px 21px,
+            #febc2e 5px, transparent 6px),
+        radial-gradient(circle at 58px 21px,
+            #28c840 5px, transparent 6px),
+        #1e293b;
+}
+
+/* Mejorar legibilidad */
+
+.reveal pre code {
+    font-family: "Consolas", monospace;
+    font-size: 22px;
+    line-height: 1.6;
+    padding: 20px;
+    max-height: 380px;
+}
+
+/* Identificar las ventanas */
+
+.reveal pre::after {
+    content: "BASH";
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: #94a3b8;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.reveal .column:last-child pre::after {
+    content: "OUTPUT";
+}
+
+/* Portada */
+
+#title-slide .title {
+    text-shadow: 0 0 30px #38bdf830;
+}
+
+#title-slide .subtitle {
+    letter-spacing: 3px;
+}
+/* Resultados extensos de Linux */
+
+.reveal .column:last-child pre code {
+    font-size: 17px;
+    line-height: 1.5;
+    white-space: pre;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 380px;
+}
+/* Permitir comandos largos */
+
+.reveal .column:first-child pre code,
+.reveal .column:first-child pre code span {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.reveal .column:first-child pre code {
+    font-size: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 380px;
+}
