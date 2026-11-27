@@ -217,12 +217,33 @@ Escuela Politécnica Nacional
 <div class="columns">
 <div class="column" style="width:35%;">
 <h3 id="comando">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pwd</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-la</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Comando registrado en Linux.</p>
 </div><div class="column" style="width:65%;">
 <h3 id="resultado">Resultado</h3>
 <pre class="text terminal-resultado"><code>
-/home/estudiante/shelldoc</code></pre>
+total 164
+drwxrwxr-x  5 justin justin  4096 Nov 27 15:11 .
+drwxr-x--- 17 justin justin  4096 Nov 27 01:47 ..
+drwxrwxr-x  7 justin justin  4096 Nov 26 01:30 .git
+-rw-rw-r--  1 justin justin    33 Nov 26 01:27 .gitattributes
+-rw-rw-r--  1 justin justin  4932 Nov 26 01:27 .gitignore
+-rw-rw-r--  1 justin justin  7041 Nov 26 01:27 README.md
+drwxrwxr-x  2 justin justin  4096 Nov 26 01:28 __pycache__
+-rw-rw-r--  1 justin justin  5665 Nov 26 01:27 estilos.css
+-rw-rw-r--  1 justin justin  5417 Nov 26 01:27 hilo1_transform.py
+-rw-rw-r--  1 justin justin  2912 Nov 26 01:27 hilo2.py
+-rw-rw-r--  1 justin justin  4894 Nov 26 01:27 hilo3.py
+-rw-rw-r--  1 justin justin  5243 Nov 26 01:27 hilo4.py
+-rw-rw-r--  1 justin justin  1158 Nov 26 01:27 lector_prueba.py
+-rw-rw-r--  1 justin justin  3571 Nov 26 01:27 main.py
+-rw-rw-r--  1 justin justin  1949 Nov 26 01:27 plantilla.qmd
+-rw-rw-r--  1 justin justin 37649 Nov 27 02:32 presentacion.html
+-rw-rw-r--  1 justin justin  4553 Nov 27 02:22 presentacion.qmd
+drwxrwxr-x  3 justin justin  4096 Nov 27 02:32 presentacion_files
+-rw-rw-r--  1 justin justin     0 Nov 27 15:11 session.txt
+-rw-rw-r--  1 justin justin  1188 Nov 26 01:27 test_hilo2.py
+-rw-rw-r--  1 justin justin 24576 Nov 27 15:10 typescript</code></pre>
 <p>Salida registrada en la sesión.</p>
 </div></div>
 </section>
@@ -231,12 +252,25 @@ Escuela Politécnica Nacional
 <div class="columns">
 <div class="column" style="width:35%;">
 <h3 id="comando-3">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> whoami</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> top</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Comando registrado en Linux.</p>
 </div><div class="column" style="width:65%;">
 <h3 id="resultado-1">Resultado</h3>
 <pre class="text terminal-resultado"><code>
-estudiante</code></pre>
+=(Btop - 15:11:19 up 9 min,  1 user,  load average: 1,42, 1,20, 0,77(B(B
+Tasks:(B 144 (Btotal,(B   1 (Brunning,(B 143 (Bsleeping,(B   0 (Bstopped,(B   0 (Bzombie(B(B
+%Cpu(s):(B  0,0 (Bus,(B 11,8 (Bsy,(B  0,0 (Bni,(B 70,6 (Bid,(B  0,0 (Bwa,(B  0,0 (Bhi,(B 17,6 (Bsi,(B  0,0 (Bst(B(B (B(B
+MiB Mem :(B   3398,8 (Btotal,(B    451,8 (Bfree,(B   2086,6 (Bused,(B   1121,7 (Bbuff/cache(B(B (B(B    (B(B
+MiB Swap:(B   2044,0 (Btotal,(B   2044,0 (Bfree,(B      0,0 (Bused.(B   1312,1 (Bavail Mem (B(B
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                        (B
+(B   1503 justin    20   0   18,2g 689432  67664 S   8,3  19,8   2:15.13 MainThread                                     (B
+(B   3039 root      20   0       0      0      0 I   8,3   0,0   0:00.82 kworker/0:2-events                             (B
+(B      1 root      20   0   24828  16152  11628 S   0,0   0,5   0:06.52 systemd                                        (B
+(B      2 root      20   0       0      0      0 S   0,0   0,0   0:00.11 kthreadd                                       (B
+(B      3 root      20   0       0      0      0 S   0,0   0,0   0:00.00 pool_workqueue_release                         (B
+(B      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-rcu_gp                               (B
+(B      5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-sync_wq                              (B&gt;</code></pre>
 <p>Salida registrada en la sesión.</p>
 </div></div>
 </section>
@@ -245,145 +279,14 @@ estudiante</code></pre>
 <div class="columns">
 <div class="column" style="width:35%;">
 <h3 id="comando-4">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> date</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ps</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Comando registrado en Linux.</p>
 </div><div class="column" style="width:65%;">
 <h3 id="resultado-2">Resultado</h3>
 <pre class="text terminal-resultado"><code>
-mar 24 nov 2026 23:54:28 UTC</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-4-1" class="slide level2">
-<h2>Comando 4</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-5">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> uname <span class="at">-a</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-3">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-Linux ubuntu-demo 7.0.0-44-generic #44-Ubuntu SMP PREEMPT_DYNAMIC Fri Nov  6 02:38:04 UTC 2026 x86_64 GNU/Linux</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-5-1" class="slide level2">
-<h2>Comando 5</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-6">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> mkdir <span class="at">-p</span> demo/subcarpeta</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-4">Resultado</h3>
-<pre class="text terminal-resultado"><code>(Sin salida)</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-6-1" class="slide level2">
-<h2>Comando 6</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-7">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> print <span class="st">"Linea 1: usuario </span><span class="dt">\$</span><span class="st">USER\nlinea 2: ruta </span><span class="dt">\"</span><span class="st">/home/estudiante</span><span class="dt">\"</span><span class="st">\nLinea 3: simbolo # y barra </span><span class="dt">\\</span><span class="st"> \n"</span> <span class="op">&gt;</span>demo/datos.txt</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-5">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-Command 'print' not found, but can be installed with:
-sudo apt install mailcap</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-7-1" class="slide level2">
-<h2>Comando 7</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-8">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> printf <span class="st">'A: $USER\nB: "ruta"\nC: # y \\\n'</span> <span class="op">&gt;</span>demo/datos.txt</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-6">Resultado</h3>
-<pre class="text terminal-resultado"><code>(Sin salida)</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-8-1" class="slide level2">
-<h2>Comando 8</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-9">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cat demo/datos.txt</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-7">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-A: $USER
-B: "ruta"
-C: # y \</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-9-1" class="slide level2">
-<h2>Comando 9</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-10">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls <span class="at">-la</span> demo</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-8">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-total 16
-drwxrwxr-x 3 estudiante estudiante 4096 Nov 24 23:59 .
-drwxrwxr-x 3 estudiante estudiante 4096 Nov 24 23:54 ..
--rw-rw-r-- 1 estudiante estudiante   28 Nov 25 00:03 datos.txt
-drwxrwxr-x 2 estudiante estudiante 4096 Nov 24 23:54 subcarpeta</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-10-1" class="slide level2">
-<h2>Comando 10</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-11">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> wc <span class="at">-l</span> demo/datos.txt</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-9">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-3 demo/datos.txt</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-11-1" class="slide level2">
-<h2>Comando 11</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-12">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> head <span class="at">-n</span> 3 /etc/os-release</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-10">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-PRETTY_NAME="Ubuntu 26.04.1 LTS"
-NAME="Ubuntu"
-VERSION_ID="26.04"</code></pre>
-<p>Salida registrada en la sesión.</p>
-</div></div>
-</section>
-<section id="comando-12-1" class="slide level2">
-<h2>Comando 12</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="comando-13">Comando</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode bash terminal-comando code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> echo <span class="st">'Fin de la sesion'</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Comando registrado en Linux.</p>
-</div><div class="column" style="width:65%;">
-<h3 id="resultado-11">Resultado</h3>
-<pre class="text terminal-resultado"><code>
-Fin de la sesion</code></pre>
+    PID TTY          TIME CMD
+   3697 pts/5    00:00:00 bash
+   3839 pts/5    00:00:00 ps</code></pre>
 <p>Salida registrada en la sesión.</p>
 </div></div>
 
